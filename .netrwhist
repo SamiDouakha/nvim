@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/tayeb/.config/nvim/plugin'
+let g:netrw_dirhist_6='/home/tayeb/.config/nvim'
+let g:netrw_dirhist_5='/home/tayeb/.config/nvim/v7'
+let g:netrw_dirhist_4='/home/tayeb/.config/nvim'
+let g:netrw_dirhist_3='/home/tayeb/.config/nvim/v7'
+let g:netrw_dirhist_2='/home/tayeb/.config/nvim/v7/plugin_config'
+let g:netrw_dirhist_1='/home/tayeb/.config/nvim'
+let g:netrw_dirhist_0='/home/tayeb/.config/nvim/plugin_config'
+let g:netrw_dirhist_9='/home/tayeb/.config/nvim'
+let g:netrw_dirhist_8='/home/tayeb/.config/nvim/plugin_config'
