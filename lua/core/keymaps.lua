@@ -4,8 +4,13 @@ vim.g.mapleader = " "
 -- mappping keys for the windows resizing
 keymap('n', "<c-right>", "<cmd>vertical resize -3<cr>")
 keymap('n', "<c-left>", "<cmd>vertical resize +3<cr>")
-keymap('n', "<C-UP>", "<cmd>resize -3<cr>")
-keymap('n', "<C-DOWN>", "<cmd>resize +3<cr>")
+keymap('n', "<S-UP>", "<cmd>resize -3<cr>")
+keymap('n', "<S-DOWN>", "<cmd>resize +3<cr>")
+-- mapping key for tabs
+keymap('n',"<A-UP>","<CMD>+tabmove<CR>")
+keymap('n',"<A-DOWN>","<CMD>-tabmove<CR>")
+
+
 
 function P(v)
 	print(vim.inspect(v))
