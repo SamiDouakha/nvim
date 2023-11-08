@@ -18,7 +18,7 @@ lspconfig.lua_ls.setup{
 lspconfig.emmet_ls.setup({
     -- on_attach = on_attach,
    -- capabilities = capabilities,
- --   filetypes = { "css", "html", "less", "sass", "scss", "typescriptreact", "vue" },
+    filetypes = { "css", "html", "less", "sass", "scss","javascript","javascriptreact", "typescriptreact" },
   --  init_options = {
    --   html = {
     --    options = {
