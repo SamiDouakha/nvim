@@ -1,6 +1,8 @@
-
 local cmp =require('cmp')
+
+require('luasnip.loaders.from_vscode').load({include={"javascript","javascriptreact"}})
 require('luasnip.loaders.from_vscode').lazy_load()
+
   cmp.setup({
     snippet = {
       -- REQUIRED - you must specify a snippet engine
@@ -15,7 +17,7 @@ require('luasnip.loaders.from_vscode').lazy_load()
     formatting = {
     	format = function(entry,vim_item)
 			vim_item.menu = ({
-				-- luasnip = "[Snippet]",
+				luasnip = "[Snippet]",
  				buffer = "[Buffer]",
  				nvim_lsp = "[LSP]",
  				nvim_lua = "[API]",
