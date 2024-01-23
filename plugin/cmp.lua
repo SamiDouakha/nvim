@@ -112,7 +112,10 @@ require('luasnip.loaders.from_vscode').lazy_load()
 
   require('lspconfig')['bashls'].setup{
     capabilities = capabilities
+}
 
+  require('lspconfig')['java_language_server'].setup {
+    capabilities = capabilities
 }
 
 capabilities = vim.lsp.protocol.make_client_capabilities()
