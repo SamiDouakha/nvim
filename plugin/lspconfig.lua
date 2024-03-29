@@ -4,7 +4,6 @@ lspconfig.pylsp.setup {}
 lspconfig.tsserver.setup {}
 -- lspconfig.html.setup {}
 lspconfig['bashls'].setup({})
--- lspconfig.cssls.setup{}
 lspconfig.lua_ls.setup{
    settings = {
               Lua = {
@@ -54,7 +53,7 @@ lspconfig.intelephense.setup({
  })
 
 lspconfig.clangd.setup{}
-
+lspconfig.yamlls.setup{}
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)

@@ -23,7 +23,7 @@ require('packer').startup(function(use)
   use 'neovim/nvim-lspconfig'
 
   -- TreeSitter
-  use {'nvim-treesitter/nvim-treesitter',run =  ':TSUpdate'}
+  -- use {'nvim-treesitter/nvim-treesitter',run =  ':TSUpdate'}
 
   -- NvimTree
   use 'nvim-tree/nvim-tree.lua'

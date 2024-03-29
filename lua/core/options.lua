@@ -6,7 +6,8 @@ set.autowrite = true
 set.autoread = true
 
 set.tabstop = 2
-set.shiftwidth = 2
+set.expandtab = true
 set.shiftround = true
 set.expandtab = true
 set.relativenumber = true
+
