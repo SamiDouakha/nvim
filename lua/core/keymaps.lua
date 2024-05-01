@@ -9,8 +9,8 @@ keymap('n', "<S-DOWN>", "<cmd>resize +3<cr>")
 -- mapping key for tabs
 keymap('n',"<A-UP>","<CMD>+tabmove<CR>")
 keymap('n',"<A-DOWN>","<CMD>-tabmove<CR>")
-
-
+-- mapping to see all the keymaps with Telescope 
+keymap('n',"<leader>fk","<CMD>Telescope keymaps<CR>")
 
 function P(v)
 	print(vim.inspect(v))
