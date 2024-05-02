@@ -17,7 +17,7 @@ lspconfig.lua_ls.setup{
 lspconfig.emmet_ls.setup({
     -- on_attach = on_attach,
    -- capabilities = capabilities,
-    filetypes = { "css", "html", "less", "sass", "scss","javascript","javascriptreact", "typescriptreact" },
+    filetypes = { "css", "html", "less","php", "sass", "scss","javascript","javascriptreact", "typescriptreact" },
   --  init_options = {
    --   html = {
     --    options = {
@@ -54,6 +54,20 @@ lspconfig.intelephense.setup({
 
 lspconfig.clangd.setup{}
 lspconfig.yamlls.setup{}
+
+lspconfig.gopls.setup({
+  settings = {
+    gopls = {
+      analyses = {
+        unusedparams = true,
+      },
+      staticcheck = true,
+      gofumpt = true,
+    },
+  },
+})
+
+
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
@@ -87,7 +101,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, opts)
     vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
     vim.keymap.set('n', '<leader>f', function()
-      vim.lsp.buf.format { async = true }
+    vim.lsp.buf.format { async = true }
     end, opts)
   end,
 })

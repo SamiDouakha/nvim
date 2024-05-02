@@ -171,9 +171,7 @@ require('lspconfig')['emmet_ls'].setup({
 -- 				nvim_lua = "[API]",
 -- 				path = "[Path]",
 -- 				cmd_line = "[CMD]",
--- 				gh_isusses = "[Isusses]",
--- 				luasnip = "[Snippet]"
 -- 			}
 -- 		}
 -- 	})
---})
+--}
