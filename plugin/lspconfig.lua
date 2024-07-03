@@ -1,10 +1,10 @@
 -- Setup language servers.
 local lspconfig = require('lspconfig')
-lspconfig.pylsp.setup {}
+lspconfig.pyright.setup {}
 lspconfig.tsserver.setup {}
 -- lspconfig.html.setup {}
-lspconfig['bashls'].setup({})
-lspconfig.lua_ls.setup{
+lspconfig['bashls'].setup{}
+lspconfig.luau_lsp.setup{
    settings = {
               Lua = {
                 diagnostics = { globals = {'vim'} }

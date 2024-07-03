@@ -11,6 +11,8 @@ keymap('n',"<A-UP>","<CMD>+tabmove<CR>")
 keymap('n',"<A-DOWN>","<CMD>-tabmove<CR>")
 -- mapping to see all the keymaps with Telescope 
 keymap('n',"<leader>fk","<CMD>Telescope keymaps<CR>")
+-- Toggle UndoTree
+keymap('n',"<leader>uu","<CMD>UndotreeToggle<CR>")
 
 function P(v)
 	print(vim.inspect(v))
