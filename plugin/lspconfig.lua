@@ -8,12 +8,6 @@ lspconfig['lua_ls'].setup {
         settings = {
                 Lua = {
                         diagnostics = { globals = { 'vim' } }
-
-
-
-
-
-                        
                 }
         }
 }
@@ -45,8 +39,6 @@ lspconfig.rust_analyzer.setup {
 lspconfig.intelephense.setup({
         root_dir = vim.loop.cwd,
         --  on_attach = function(_,bufnr)
-
-        --	print("TEST 25 lspconfig.lua")
         -- Enable (omnifunc) completion triggered by <c-x><c-o>
         --  vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
         --  vim.api.nvim_buf_set_keymap(bufnr, "n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>")--, opts)
