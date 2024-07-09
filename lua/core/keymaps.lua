@@ -2,8 +2,8 @@
 local keymap = vim.keymap.set
 vim.g.mapleader = " "
 -- mappping keys for the windows resizing
-keymap('n', "<c-right>", "<cmd>vertical resize -3<cr>")
-keymap('n', "<c-left>", "<cmd>vertical resize +3<cr>")
+keymap('n', "<S-right>", "<cmd>vertical resize -3<cr>")
+keymap('n', "<S-left>", "<cmd>vertical resize +3<cr>")
 keymap('n', "<S-UP>", "<cmd>resize -3<cr>")
 keymap('n', "<S-DOWN>", "<cmd>resize +3<cr>")
 -- mapping key for tabs
