@@ -68,6 +68,9 @@ use {
 use {
       "mbbill/undotree"  
 }
+use "craftzdog/solarized-osaka.nvim" 
+use "scottmckendry/cyberdream.nvim" 
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
