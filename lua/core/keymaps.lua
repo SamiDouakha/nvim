@@ -13,6 +13,8 @@ keymap('n',"<A-DOWN>","<CMD>-tabmove<CR>")
 keymap('n',"<leader>fk","<CMD>Telescope keymaps<CR>")
 -- Toggle UndoTree
 keymap('n',"<leader>uu","<CMD>UndotreeToggle<CR>")
+-- Map for terminal
+keymap('n',"<leader>tt","<cmd>vsplit | terminal<cr>")
 
 function P(v)
 	print(vim.inspect(v))
