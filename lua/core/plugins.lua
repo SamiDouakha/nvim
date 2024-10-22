@@ -20,7 +20,7 @@ require('packer').startup(function(use)
   use { "williamboman/mason.nvim" }
 
   -- LSP 	
-  use 'neovim/nvim-lspconfig'
+  use { 'neovim/nvim-lspconfig', run = ':PackerUpdate'}
 
   -- TreeSitter
   use {'nvim-treesitter/nvim-treesitter',run =  ':TSUpdate'}
@@ -71,6 +71,23 @@ use {
 use "craftzdog/solarized-osaka.nvim" 
 use "scottmckendry/cyberdream.nvim" 
 
+-- install without yarn or npm
+--use ({
+--    "iamcco/markdown-preview.nvim",
+--    run = function() vim.fn["mkdp#util#install"]() end,
+-- })
+
+
+use({
+  "iamcco/markdown-preview.nvim",
+  cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+  build = "cd app && npm install",
+  init = function()
+    vim.g.mkdp_filetypes = { "markdown" }
+  end,
+  ft = { "markdown" },
+})
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
@@ -78,6 +95,4 @@ use "scottmckendry/cyberdream.nvim"
   end
 
 end)
-
-
 

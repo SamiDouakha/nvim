@@ -1,7 +1,7 @@
 -- Setup language servers.
 local lspconfig = require('lspconfig')
 lspconfig.pyright.setup {}
-lspconfig.tsserver.setup {}
+lspconfig.ts_ls.setup {}
 -- lspconfig.html.setup {}
 lspconfig['bashls'].setup {}
 lspconfig['lua_ls'].setup {
@@ -17,7 +17,10 @@ lspconfig['lua_ls'].setup {
 lspconfig.emmet_ls.setup({
         -- on_attach = on_attach,
         -- capabilities = capabilities,
-        filetypes = {"template", "css", "html", "less", "php", "sass", "scss", "javascript", "javascriptreact", "typescriptreact" },
+        filetypes = {"template", "css", "html",
+                        "less", "php", "sass", 
+                        "scss", "javascript", "javascriptreact", 
+                        "typescriptreact" },
         --  init_options = {
         --   html = {
         --    options = {
@@ -65,12 +68,13 @@ lspconfig.gopls.setup({
         },
 })
 
+lspconfig['ts_ls'].setup {}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
-vim.keymap.set('n', '<leader>dn', vim.diagnostic.goto_prev)
-vim.keymap.set('n', '<leader>dp', vim.diagnostic.goto_next)
+vim.keymap.set('n', '<leader>dp', vim.diagnostic.goto_prev)
+vim.keymap.set('n', '<leader>dn', vim.diagnostic.goto_next)
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
 
 -- Use LspAttach autocommand to only map the following keys
@@ -103,3 +107,4 @@ vim.api.nvim_create_autocmd('LspAttach', {
                 end, opts)
         end,
 })
+

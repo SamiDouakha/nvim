@@ -108,7 +108,7 @@ require('lspconfig')['intelephense'].setup {
         capabilities = capabilities
         --require('intelephense').default_capabilities()
 }
-require('lspconfig')['tsserver'].setup {
+require('lspconfig')['ts_ls'].setup {
         capabilities = capabilities
 }
 
