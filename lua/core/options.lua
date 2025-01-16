@@ -6,10 +6,15 @@ set.autowrite = true
 set.autoread = true
 set.splitbelow = true
 set.splitright = true
-set.tabstop = 2
+
 set.expandtab = true
+set.tabstop = 4
+set.shiftwidth = 4
+
 set.shiftround = true
 set.number = true
 set.relativenumber = true
 set.cursorline = true
+
+set.termguicolors = true
 

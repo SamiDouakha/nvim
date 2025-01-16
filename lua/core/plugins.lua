@@ -66,10 +66,10 @@ use {
     end
 }
 use {
-      "mbbill/undotree"  
+      "mbbill/undotree"
 }
-use "craftzdog/solarized-osaka.nvim" 
-use "scottmckendry/cyberdream.nvim" 
+use "craftzdog/solarized-osaka.nvim"
+use "scottmckendry/cyberdream.nvim"
 
 -- install without yarn or npm
 --use ({
@@ -88,8 +88,10 @@ use({
   ft = { "markdown" },
 })
 
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
+
+
+-- Automatically set up your configuration after cloning packer.nvim
+-- Put this at the end after all plugins
   if packer_bootstrap then
     require('packer').sync()
   end

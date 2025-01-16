@@ -2,7 +2,8 @@
 local lspconfig = require('lspconfig')
 lspconfig.pyright.setup {}
 lspconfig.ts_ls.setup {}
--- lspconfig.html.setup {}
+
+
 lspconfig['bashls'].setup {}
 lspconfig['lua_ls'].setup {
         settings = {
